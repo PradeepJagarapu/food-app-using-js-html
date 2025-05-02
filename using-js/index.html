@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //0.root div element
+        var rootDiv=document.createElement("div");
+        rootDiv.setAttribute("id","root");
+
+        //1.header section
+        var headerDiv=document.createElement("div");
+        headerDiv.setAttribute("id","header");
+
+        //1.1 logo section
+        var logoDiv=document.createElement("div");
+        logoDiv.setAttribute("id","logo");
+
+        headerDiv.appendChild(logoDiv);
+
+        //1.2 menu section 
+        var menuDiv=document.createElement("div");
+        menuDiv.setAttribute("id","menu");
+
+        var ul=document.createElement("ul");
+
+        for(i=0;i<4;i++){
+            var li=document.createElement("li");
+            
+        }
+
+        headerDiv.appendChild(menuDiv);
+
+        //2.,body section
+        var bodyDiv=document.createElement("div");
+        bodyDiv.setAttribute("id","body");
+
+        //2.1 search box
+        var searchDiv=document.createElement("div");
+        searchDiv.setAttribute("id","searchBox");
+        
+        bodyDiv.appendChild(searchDiv);
+
+        //2.2 foodItems sections
+        var foodItemsDiv=document.createElement("div");
+        foodItemsDiv.setAttribute("id","foodItems");
+
+        bodyDiv.appendChild(foodItemsDiv);
+
+        //3.footersection
+        var footerDiv=document.createElement("div");
+        footerDiv.setAttribute("id","footer");
+        
+        //3.1 links section
+        var linksDiv=document.createElement("div");
+        linksDiv.setAttribute("id","links");
+
+        footerDiv.appendChild(linksDiv);
+
+        //3.2 copyright info
+        var copyrightInfoDiv=document.createElement("div");
+        copyrightInfoDiv.setAttribute("id","copyrightInfo");
+
+        footerDiv.appendChild(copyrightInfoDiv);
+
+        //3.3 demo section
+        var demoDiv=document.createElement("div");
+        demoDiv.setAttribute("id","demo");
+
+        footerDiv.appendChild(demoDiv);
+
+        rootDiv.appendChild(headerDiv);
+        rootDiv.appendChild(bodyDiv);
+        rootDiv.appendChild(footerDiv);
+        document.body.appendChild(rootDiv);
+    </script>
+</body>
+</html>
