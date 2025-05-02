@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root{
+            border: 2px solid black;
+            padding: 2%;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        #header,#body,#footer{
+            border: 2px solid black;
+           
+        }
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #menu ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+        #menu ul li a{
+          text-decoration: none;
+        }
+        #body{
+            border: 2px solid black;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #foodItems{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .foodCard{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 250px;
+            width: 200px;
+        }
+        #footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div id="header">
+            <div id="logo"><img src="" alt="Logo"/></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <div id="searchBox">
+                <input type="text" placeholder="Search"/>
+                <button>Search</button>
+            </div>
+            <div id="foodItems">
+                <div class="foodCard">
+                    <h1>Title</h1>
+                    <p>Description</p>
+                    <img src="" alt="food image"/>
+                </div>
+                <div class="foodCard">
+                    <h1>Title</h1>
+                    <p>Description</p>
+                    <img src="" alt="food image"/>
+                </div>
+                <div class="foodCard">
+                    <h1>Title</h1>
+                    <p>Description</p>
+                    <img src="" alt="food image"/>
+                </div>
+                <div class="foodCard">
+                    <h1>Title</h1>
+                    <p>Description</p>
+                    <img src="" alt="food image"/>
+                </div>
+                <div class="foodCard">
+                    <h1>Title</h1>
+                    <p>Description</p>
+                    <img src="" alt="food image"/>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="links">Links</div>
+            <div id="copyrightInfo">@Copyright info</div>
+            <div id="demo">demo</div>
+        </div>
+    </div>
+</body>
+</html>
